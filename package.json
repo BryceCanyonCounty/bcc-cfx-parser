@@ -1,0 +1,26 @@
+{
+  "name": "bcc-cfx-parser",
+  "version": "1.0.0",
+  "description": "A data pull and parser for cfx public server data",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bytesizd",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.12",
+    "cypress": "^10.3.1",
+    "moment": "^2.29.4",
+    "pretty": "^2.0.0",
+    "proxy-chain": "^2.0.5",
+    "puppeteer": "^15.5.0",
+    "puppeteer-extra": "^3.3.4",
+    "puppeteer-extra-plugin-stealth": "^2.11.0",
+    "random-useragent": "^0.5.0",
+    "request": "^2.88.2",
+    "zlib": "^1.0.5"
+  }
+}
