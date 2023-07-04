@@ -45,8 +45,9 @@ request(options, async function (error, response) {
     console.log("Detected Server IDs:", parsed.length);
 
     console.log("Grabing each server...");
-    // for (let pos = 0; pos < parsed.length; pos++) {
-    for (let pos = 0; pos < 5; pos++) {
+
+    let servercount = parsed.length
+    for (let pos = 0; pos < servercount; pos++) {
         const id = parsed[pos];
         console.log("Grabing ", id);
 
@@ -122,7 +123,7 @@ function gatherData(data) {
             for (let ps = 0; ps < server.resources.length; ps++) {
                 const resource = server.resources[ps];
                 
-                if (redm.resources[resource]) {
+                if (resource in redm.resources) {
                     redm.resources[resource]++
                 } else {
                     redm.resources[resource] = 0
